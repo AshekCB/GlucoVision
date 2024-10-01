@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment – GlucoVision</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            text-transform: uppercase;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0059b3;
+            padding: 15px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 1.3em;
+            font-weight: 500;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        h2 {
+            color: #1a73e8;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .appointment-form {
+            margin: 20px 0;
+        }
+        .appointment-form label {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .appointment-form input,
+        .appointment-form select {
+            padding: 10px;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .appointment-form button {
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .appointment-form button:hover {
+            background-color: #0059b3;
+        }
+        footer {
+            text-align: center;
+            background-color: #1a73e8;
+            color: white;
+            padding: 10px 0;
+            margin-top: 40px;
+        }
+        .book-btn {
+            display: block;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .book-btn a {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .book-btn a:hover {
+            background-color: #ffaa00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Doctor Appointment</h1>
+        <h4>Gluco-Vision</h4>
+    </header>
+
+    <nav>
+        <a href="{{url_for('home')}}">Home</a>
+        <a href="{{url_for('about')}}">About</a>
+        <a href="{{url_for('bmi')}}">BMI Calculator</a>
+        <a href="{{url_for('predictions')}}">Prediction Page</a>
+        <a href="{{url_for('age')}}">Age Calculator</a>
+        <a href="{{url_for('appointments')}}">Dr Appointment Booking</a>
+        <a href="{{url_for('guard')}}">Dia Guard</a>
+    </nav>
+
+    <main>
+        <h2>Book Your Doctor Appointment</h2>
+        <p>
+            Consult a specialist for your health needs. Our DiaPredictor offers personalized consultation with top specialists to help manage and treat diabetes-related conditions. Choose a doctor from various specialties and book your appointment in just a few clicks.
+        </p>
+        <p>
+            <strong>Specialties Available:</strong><br>
+            <b>Endocrinology:</b> Experts in hormone-related diseases, including diabetes management.<br>
+            <b>Cardiology:</b> Specialists who treat heart-related issues that often arise from diabetes complications.<br>
+            <b>Nephrology:</b> Consult a nephrologist to manage kidney health, especially vital for diabetic patients.<br>
+            <b>Ophthalmology:</b> Diabetes can impact eye health—book a consultation with an ophthalmologist for regular eye check-ups.<br>
+            <b>Nutrition and Dietetics:</b> Get expert advice on meal planning and diet management for diabetes control.
+        </p>
+        <p>
+            <strong>How It Works:</strong><br>
+            1. Choose a Specialist: Select the specialty and doctor based on your health needs.<br>
+            2. Select Your Slot: Pick a convenient date and time for your consultation.<br>
+            3. Confirm Booking: Review the appointment details and confirm your booking. We will send a confirmation email and SMS with your booking details.
+        </p>
+
+        <div class="book-btn">
+            <a href="https://www.apollo247.com/specialties" target="_blank">Book an Appointment</a>
+        </div>
+
+    </main>
+
+    <footer>
+        &copy; 2025 GLUCO-VISION of Batch 2025 Passouts. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
