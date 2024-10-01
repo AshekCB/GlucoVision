@@ -10,7 +10,7 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.neighbors import KNeighborsClassifier
 
 #Loading the Dataset
-df=pd.read_csv("D:\Project Updated versions\pre-processed-data.csv")
+df=pd.read_csv("https://raw.githubusercontent.com/AshekCB/GlucoVision/refs/heads/main/pre-processed-data.csv")
 
 #Feature Extraction
 x = df.drop('Outcome', axis=1)#Dependents
